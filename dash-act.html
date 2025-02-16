@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICARD-dashbord</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@416&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="act-style.css">
+</head>
+<body>
+
+    <!--Side menu-->
+    <div class="container">
+        <div class="side-menu" id="sidemenu">
+            <h1>IUCAA</h1>
+            <div class="menu" id="Research"><i class="fa-solid fa-book-open-reader"></i><a href="dash-index.html">Research</a></div>
+            <div class="menu" id="Activities"><i class="fa-solid fa-drum"></i><a href="dash-act.html">Activities</a></div>
+            <div class="menu" id="Gallery"><i class="fa-solid fa-images"></i><a href="dash-gallery.html">Gallery</a></div>
+            <div class="menu" id="Event"><i class="fa-solid fa-hand-holding-heart"></i><a href="dash-event.html">Event</a></div>
+            <div class="prof" ><i id="user"class="fa-solid name"></i><a id="prof" href="dash-profile.html"></a>
+            </div>
+            <div class="log" ><i id="out"class="fa-solid fa-right-to-bracket"></i><a id="log" href="dash-logout.html">Log out</a>
+            </div>
+        
+        </div>
+        <!--main-->
+        
+        <div class="main-block" id="mainblock">
+        <h1>Activities</h1>
+          
+          <!--head section-->  
+            <section class="head">
+                <div class="search" id="search">
+                 <i class="fa-solid fa-magnifying-glass"></i>
+                 <input id="input" type="search"  placeholder="search" >
+                </div>
+                <label for="select"id="label">Showing</label>
+                <select id="select">
+                    <option>10</option>
+                    <option>15</option>
+                    <option>20</option>
+                    <option>25</option>
+                    <option>30</option>
+                    <option>35</option>                    
+                    <option>40</option>                    
+                </select>
+                <button class="filter">
+                 Filter<i class="fa-solid fa-filter"></i>    
+                </button>
+                <button class="export">
+                 Export<i class="fa-solid fa-upload"></i>
+                </button>
+                <button class="add" onclick="openNav()">
+                    <i class="fa-solid fa-plus"></i>
+                    Add New Research 
+                </button>
+            </section>
+            <!--table section-->
+            <section
+                class="table">
+                <table id="table">
+                    <thead >
+                        <tr>
+                            <th>Tiltle</th>
+                            <th>Image</th>
+                            <th>Description</th>
+                            <th style="padding-left: 10px;">Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        <tr>
+                            <td>Inovate & Elevate:Advanced...</td>
+                            <td> <i class="fa-solid fa-images"></i>image.jpg</td>
+                            <td>Inovate & Elevate:Advanced...</td>
+                            <td><i class="fa-solid fa-ellipsis"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Future Frontiers : Emerging Tec...</td>
+                            <td> <i class="fa-solid fa-images"></i>image.jpg</td>
+                            <td>Inovate & Elevate:Advanced...</td>
+                            <td><i class="fa-solid fa-ellipsis"></i></td>
+                        </tr>
+                        <tr>
+                            <td>AI & Ethics: Responsible innov...</td>
+                            <td> <i class="fa-solid fa-images"></i>image.jpg</td>
+                            <td>Inovate & Elevate:Advanced...</td>
+                            <td><i class="fa-solid fa-ellipsis"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Data-driven Insights : Analytic...</td>
+                            <td> <i class="fa-solid fa-images"></i>image.jpg</td>
+                            <td>Inovate & Elevate:Advanced...</td>
+                            <td><i class="fa-solid fa-ellipsis"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Sustainable Solutions: Green R...</td>
+                            <td> <i class="fa-solid fa-images"></i>image.jpg</td>
+                            <td>Inovate & Elevate:Advanced...</td>
+                            <td><i class="fa-solid fa-ellipsis"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Bringing Minds : Interdisciplina...</td>
+                            <td> <i class="fa-solid fa-images"></i>image.jpg</td>
+                            <td>Inovate & Elevate:Advanced...</td>
+                            <td><i class="fa-solid fa-ellipsis"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Secure Tommorow: Cyber Secur...</td>
+                            <td> <i class="fa-solid fa-images"></i>image.jpg</td>
+                            <td>Inovate & Elevate:Advanced...</td>
+                            <td><i class="fa-solid fa-ellipsis"></i></td>
+                        </tr>
+                        <tr>
+                            <td>From Theory to Reliability: Applie...</td>
+                            <td> <i class="fa-solid fa-images"></i>image.jpg</td>
+                            <td>Inovate & Elevate:Advanced...</td>
+                            <td><i class="fa-solid fa-ellipsis"></i></td>
+                        </tr>
+                        <tr>
+                            <td>The Next Breakthrough: Young...</td>
+                            <td> <i class="fa-solid fa-images"></i>image.jpg</td>
+                            <td>Inovate & Elevate:Advanced...</td>
+                            <td><i class="fa-solid fa-ellipsis"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Global Research collaboration...</td>
+                            <td> <i class="fa-solid fa-images"></i>image.jpg</td>
+                            <td>Inovate & Elevate:Advanced...</td>
+                            <td><i class="fa-solid fa-ellipsis"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Inovate & Elevate : advanced...</td>
+                            <td> <i class="fa-solid fa-images"></i>image.jpg</td>
+                            <td>Inovate & Elevate:Advanced...</td>
+                            <td><i class="fa-solid fa-ellipsis"></i></td>
+                        </tr>
+
+                    </tbody>
+                   
+                </table>
+            </section>
+        </div>
+          <div id="mySidenav" class="sidenav">
+            <div id="sidenav01" class="sidenav01">
+              
+            </div>
+            <div id="sidenav02" class="sidenav02">
+            <section><h1>Add New Activity</h1>
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a></section>
+                <form action="" class="form">
+                    <input type="text" class="title" placeholder="Tiltle">
+                    <div class="img"><img src="Rectangle 4.png" alt="img" ></div>
+                    <input type="date" placeholder="Select Date" name="date" id="date">
+                   
+                    <textarea name="text" id="text" placeholder="Description"></textarea>
+                    <div class="but">
+                    <button style="background-color: rgb(187, 186, 184); width: 40%;height: 28px;" type="reset">Cancel</button>
+                    <button style="background-color: rgb(8, 8, 8); width: 40%;height: 28px;color: white;" type="submit">Add</button>
+                    </div>
+                </form>
+                </div>
+          </div>
+        
+
+    </div>
+    <script src="dash.js"></script>
+</body>
+</html>
